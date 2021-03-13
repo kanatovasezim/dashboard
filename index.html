@@ -4,15 +4,326 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="page">
 <div class="dashboard row">
     <div class="col-2 left-menu">
-        <img src="media/logo.png" class="pt-5"/>
+        <div class="margin-x-13 py-5 top-element">
+            <img src="media/logo.png" width="137" height="30" alt="logo"/>
+            <div class="vertical-menu pt-5">
+                <div href="#" class="active btn rounded">
+                    <img src="media/icon1.png" class="pr-2" alt=""/>
+                    <span>Overview</span>
+                </div>
+                <div href="#" class="btn">
+                    <img src="media/icon2.png" class="pr-2" alt=""/>
+                    <span>Transactions</span>
+                </div>
+                <div href="#" class="btn">
+                    <img src="media/icon3.png" class="pr-2" alt=""/>
+                    <span>Cards</span>
+                </div>
+                <div href="#" class="btn">
+                    <img src="media/icon4.png" class="pr-2" alt=""/>
+                    <span>Invoices</span>
+                </div>
+                <div href="#" class="btn">
+                    <img src="media/icon5.png" class="pr-2" alt=""/>
+                    <span>Goals</span>
+                </div>
+                <div href="#" class="btn">
+                    <img src="media/icon6.png" class="pr-2" alt=""/>
+                    <span>Settings</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-element">
+            <img src="media/groupIcon.png" width="72" height="81"/>
+            <div class="group-text">Give your money<br> awesome space in cloud</div>
+            <button class="btn premium-button">Upgrade to premium
+                <img src="media/arrow.png"></button>
+        </div>
     </div>
 
     <div class="col-10">
-
+        <div class="upper-navbar row">
+            <div class="col-10">
+                <h2 class="font-weight-bold ">Weekly sumup</h2>
+                <p class="text-gray">Get summary of your weekly online transactions here.</p>
+            </div>
+            <div class="col-2 d-flex align-items-center">
+                <img src="media/mail.png">
+                <img src="media/bell.png">
+                <img src="media/user.png">
+                <!--                    <div class="d-flex flex-column">-->
+                <!--                        <p>Andrew</p>-->
+                <!--                        <span class="text-gray">Admin account</span>-->
+                <!--                    </div>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <div class="container-fluid box-shadow round-25">
+                    <p class="pt-3 pl-2" style="font-size: 20px; font-family: Quicksand,serif;">Cards</p>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="d-flex align-items-center bor-right">
+                                <img src="media/arrowLeft.png" class="pr-2">
+                                <div class="container-fluid dashboardCard text-left pt-3">
+                                    <p class="primaryText">cloudcash<br><span class="secondaryText text-uppercase">PREMIUM ACCOUNT</span>
+                                    </p>
+                                    <span class="pt-2 embossing">5789
+                                <span class="pl-2">* * * *</span>
+                                <span class="pl-2">* * * *</span>
+                                <span class="pl-2">2487</span>
+                            </span>
+                                    <div class="row pt-4">
+                                        <div class="col-4 lato text-white">
+                                            <p style="font-size: 7px">Card holder<br></p>
+                                            <p style="font-size: 12px">Mike Smith</p>
+                                        </div>
+                                        <div class="col-4 lato text-white">
+                                            <p style="font-size: 7px">Expire date<br></p>
+                                            <p style="font-size: 12px">06/21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="media/arrowRight.png" class="px-2">
+                            </div>
+                            <div class="d-block pt-4 pb-2 pl-3 pr-4">
+                                <div class="progress progress-xs" style="height: 10px">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 15%"
+                                         aria-valuenow="15" aria-valuemax="100" aria-valuemin="0"></div>
+                                </div>
+                                <div class="d-flex">
+                                <span class="text-muted align-self-start pt-1"
+                                      style="font-size: 14px">Weekly payment limit</span>
+                                    <span class="text-dark font-weight-bold align-self-end pl-5"
+                                          style="font-size: 11px">$350.60 / $4000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex flex-column align-items-end lato">
+                            <span class="text-blue font-weight-bold" style="font-size: 18px">$<span
+                                    style="font-size: 26px"> 2850.75</span><br></span>
+                            <span class="text-muted" style="font-size: 12px">Current balance</span>
+                            <span class="text-green font-weight-bold pt-2" style="font-size: 16px">$ 1500.50<br></span>
+                            <span class="text-muted" style="font-size: 12px">Income</span>
+                            <span class="text-red font-weight-bold pt-2" style="font-size: 16px">$ 350.60<br></span>
+                            <span class="text-muted" style="font-size: 12px">Outcome</span>
+                            <label class="switch mt-4">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="text-muted" style="font-size: 12px">Deactivate card</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid box-shadow round-25 mt-4">
+                    <p class="pt-3 pl-2" style="font-size: 20px; font-family: Quicksand,serif;">Transaction history</p>
+                    <table class="table table-hover table-responsive-sm suprema" style="font-size: 14px">
+                        <thead>
+                        <tr class="text-muted font-weight-bold">
+                            <td>Receiver</td>
+                            <td>Type</td>
+                            <td>Date</td>
+                            <td>Amount</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="text-dark font-weight-bold">Tesco Market</td>
+                            <td class="text-muted">Shopping</td>
+                            <td class="text-muted">13 Dec 2020</td>
+                            <td class="text-dark font-weight-bold">$75.67</td>
+                        </tr>
+                        <tr>
+                            <td class="text-dark font-weight-bold">Tesco Market</td>
+                            <td class="text-muted">Shopping</td>
+                            <td class="text-muted">13 Dec 2020</td>
+                            <td class="text-dark font-weight-bold">$75.67</td>
+                        </tr>
+                        <tr>
+                            <td class="text-dark font-weight-bold">Tesco Market</td>
+                            <td class="text-muted">Shopping</td>
+                            <td class="text-muted">13 Dec 2020</td>
+                            <td class="text-dark font-weight-bold">$75.67</td>
+                        </tr>
+                        <tr>
+                            <td class="text-dark font-weight-bold">Tesco Market</td>
+                            <td class="text-muted">Shopping</td>
+                            <td class="text-muted">13 Dec 2020</td>
+                            <td class="text-dark font-weight-bold">$75.67</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="goals mb-2">
+                    <span class="pl-2" style="font-size: 20px; font-family: Quicksand,serif;">Goals<img
+                            src="media/plus-circle.png"></span>
+                    <div class="row suprema">
+                        <div class="col-3 container-fluid box-shadow round-25 d-flex flex-column">
+                            <div class="align-self-start pt-3">
+                                <h6 class="font-weight-bold">$550</h6>
+                                <p class="text-muted" style="font-size: 10px">12/20/20</p>
+                            </div>
+                            <div class="align-self-end pb-2">
+                                <img src="media/mountain-logo.png" height="25" width="25">
+                                <span>Holidays</span>
+                            </div>
+                        </div>
+                        <div class="col-3 ml-1 container-fluid box-shadow round-25 d-flex flex-column">
+                            <div class="align-self-start pt-3">
+                                <h6 class="font-weight-bold">$200</h6>
+                                <p class="text-muted" style="font-size: 10px">12/20/20</p>
+                            </div>
+                            <div class="align-self-end pb-2">
+                                <img src="media/paintbrush-logo.png" height="25" width="25">
+                                <span>Renovation</span>
+                            </div>
+                        </div>
+                        <div class="col-3 ml-1 container-fluid box-shadow round-25 d-flex flex-column">
+                            <div class="align-self-start pt-3">
+                                <h6 class="font-weight-bold">$820</h6>
+                                <p class="text-muted" style="font-size: 10px">12/20/20</p>
+                            </div>
+                            <div class="align-self-end pb-2" style="margin-right: auto">
+                                <img src="media/xbox-logo.png" height="25" width="25"><br>
+                                <span>Xbox</span>
+                            </div>
+                        </div>
+                        <div class="col-1 mr-2 d-flex align-items-center">
+                            <img src="media/arrowRight.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="statistics mt-5 mb-2">
+                    <span class="pl-2" style="font-size: 20px; font-family: Quicksand,serif;">Outcome Statistics</span>
+                    <div class="d-flex align-items-center flex-wrap mb-2 mt-2">
+                        <div class="box" style="background-color: #FFEADA">
+                            <span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo7\dist/../src/media/svg/icons\Shopping\Cart1.svg--><svg
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="24px"
+                                    viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24"/>
+                                    <path d="M18.1446364,11.84388 L17.4471627,16.0287218 C17.4463569,16.0335568 17.4455155,16.0383857 17.4446387,16.0432083 C17.345843,16.5865846 16.8252597,16.9469884 16.2818833,16.8481927 L4.91303792,14.7811299 C4.53842737,14.7130189 4.23500006,14.4380834 4.13039941,14.0719812 L2.30560137,7.68518803 C2.28007524,7.59584656 2.26712532,7.50338343 2.26712532,7.4104669 C2.26712532,6.85818215 2.71484057,6.4104669 3.26712532,6.4104669 L16.9929851,6.4104669 L17.606173,3.78251876 C17.7307772,3.24850086 18.2068633,2.87071314 18.7552257,2.87071314 L20.8200821,2.87071314 C21.4717328,2.87071314 22,3.39898039 22,4.05063106 C22,4.70228173 21.4717328,5.23054898 20.8200821,5.23054898 L19.6915238,5.23054898 L18.1446364,11.84388 Z"
+                                          fill="#F8964C" opacity="0.3"/>
+                                    <path d="M6.5,21 C5.67157288,21 5,20.3284271 5,19.5 C5,18.6715729 5.67157288,18 6.5,18 C7.32842712,18 8,18.6715729 8,19.5 C8,20.3284271 7.32842712,21 6.5,21 Z M15.5,21 C14.6715729,21 14,20.3284271 14,19.5 C14,18.6715729 14.6715729,18 15.5,18 C16.3284271,18 17,18.6715729 17,19.5 C17,20.3284271 16.3284271,21 15.5,21 Z"
+                                          fill="#F8964C"/>
+                                </g></svg>
+                            </span>
+                        </div>
+                        <div class="d-flex flex-column flex-grow-1 mx-3">
+                            <div class="progress" style="height: 10px; width: 250px">
+                                <div class="progress-bar bg-primary" role="progressbar"
+                                     style="width: 52%; background: linear-gradient(270deg, #FCAE73 0%, #F79042 99.18%);"
+                                     aria-valuenow="52" aria-valuemax="100" aria-valuemin="0"></div>
+                            </div>
+                            <span class="text-muted">Shoppping</span>
+                        </div>
+                        <div class="text-dark-50 font-weight-bolder d-flex align-items-center pb-3"
+                             style="font-size: 25px">52%
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap mb-2 mt-2">
+                        <div class="box" style="background-color: #DDF9E4">
+                            <span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo7\dist/../src/media/svg/icons\Communication\Archive.svg--><svg
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24"/>
+                                    <path d="M4.5,3 L19.5,3 C20.3284271,3 21,3.67157288 21,4.5 L21,19.5 C21,20.3284271 20.3284271,21 19.5,21 L4.5,21 C3.67157288,21 3,20.3284271 3,19.5 L3,4.5 C3,3.67157288 3.67157288,3 4.5,3 Z M8,5 C7.44771525,5 7,5.44771525 7,6 C7,6.55228475 7.44771525,7 8,7 L16,7 C16.5522847,7 17,6.55228475 17,6 C17,5.44771525 16.5522847,5 16,5 L8,5 Z"
+                                          fill="#209D43"/>
+                                </g>
+                            </svg>
+                            </span>
+                        </div>
+                        <div class="d-flex flex-column flex-grow-1 mx-3">
+                            <div class="progress" style="height: 10px; width: 250px">
+                                <div class="progress-bar bg-primary" role="progressbar"
+                                     style="width: 21%; background: linear-gradient(90deg, #209D43 0%, #2BC255 100%);"
+                                     aria-valuenow="52" aria-valuemax="100" aria-valuemin="0"></div>
+                            </div>
+                            <span class="text-muted">Electronics</span>
+                        </div>
+                        <div class="text-dark-50 font-weight-bolder d-flex align-items-center pb-3"
+                             style="font-size: 25px">21%
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap mb-2 mt-2">
+                        <div class="box" style="background-color: #E4F0FF">
+                            <span class="svg-icon svg-icon-primary svg-icon-2x"><!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo7\dist/../src/media/svg/icons\Home\Wood2.svg--><svg
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect x="0" y="0" width="24" height="24"/>
+                                    <polygon fill="#70A6E8" opacity="0.3" points="12 2 4 19 20 19"/>
+                                    <rect fill="#70A6E8" x="11" y="11" width="2" height="11" rx="1"/>
+                                </g>
+                            </svg>
+                            </span>
+                        </div>
+                        <div class="d-flex flex-column flex-grow-1 mx-3">
+                            <div class="progress" style="height: 10px; width: 250px">
+                                <div class="progress-bar bg-primary" role="progressbar"
+                                     style="width: 52%; background: linear-gradient(270deg, #3c89e5 0%, #75a7d9 99.18%);"
+                                     aria-valuenow="52" aria-valuemax="100" aria-valuemin="0"></div>
+                            </div>
+                            <span class="text-muted">Travels</span>
+                        </div>
+                        <div class="text-dark-50 font-weight-bolder d-flex align-items-center pb-3"
+                             style="font-size: 25px">52%
+                        </div>
+                    </div>
+                </div>
+                <div class="transactions row mt-5">
+                    <div class="col-7 container-fluid box-shadow round-25 mr-1">
+                        <span class="pl-2" style="font-size: 20px; font-family: Quicksand,serif;">New transaction</span>
+                        <div class="d-flex justify-content-center">
+                            <div class="d-flex flex-column flex-wrap align-items-center">
+                                <img src="media/photo.png" width="40" height="40">
+                                <p style="font-size: 10px">Ann</p>
+                            </div>
+                            <div class="d-flex flex-column flex-wrap align-items-center">
+                                <img src="media/photo1.png" width="40" height="40">
+                                <p style="font-size: 10px">Monica</p>
+                            </div>
+                            <div class="d-flex flex-column flex-wrap align-items-center">
+                                <img src="media/photo2.png" width="40" height="40">
+                                <p style="font-size: 10px">John</p>
+                            </div>
+                            <div class="d-flex flex-column flex-wrap align-items-center">
+                                <img src="media/photo3.png" width="40" height="40">
+                                <p style="font-size: 10px">Mike</p>
+                            </div>
+                            <div class="d-flex flex-column flex-wrap align-items-center">
+                                <img src="media/plus-circle.png" width="40" height="40">
+                                <p style="font-size: 10px">Add New</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-around mb-3">
+                            <input placeholder=" $" class="round-25" style="width: 120px; border-color: #70A6E8;">
+                            <button class="btn"
+                                    style="max-width: 100px; font-size: 10px; background-color: #FFC145; border-radius: 40px">
+                                Send >
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-4 container-fluid box-shadow round-25 mr-4 d-flex" style="background-color: #ED654C;">
+                        <div class="suprema align-self-end pb-3">
+                            <span class="text-white font-weight-bold " style="font-size: 18px;">Get great loan! ></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>
